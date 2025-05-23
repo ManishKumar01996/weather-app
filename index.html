@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>WEATHER APP</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <!-- App title -->
+        <h1>WEATHER APP</h1>
+        
+        <!-- Input field and search button -->
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button>
+        </div>
+    </div>
+
+    <!-- Main content section -->
+    <main>        
+        <!-- Weather display section -->
+        <div class="weather">
+            <!-- City name -->
+            <h2 id="city">Delhi,IN</h2>
+            
+            <!-- Temperature and weather icon -->
+            <div class="temp-box">
+                <img src="weather.png" alt="" id="img">
+                <p id="temperature">26 °C</p>
+            </div>
+            
+            <!-- Weather description -->
+            <span id="clouds">Broken Clouds</span>
+        </div>
+        
+        <!-- Divider for visual separation -->
+        <div class="divider1"></div>
+
+        <!-- Upcoming forecast section -->
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            
+            <!-- List of hourly forecasts -->
+            <div class="templist">
+                <!-- Single forecast entry -->
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <!-- Repeat forecast entries -->
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 4-day forecast section -->
+    <div class="forecstD">
+        <!-- Divider for visual separation -->
+        <div class="divider2"></div>
+        
+        <!-- Header for 4-day forecast -->
+        <p class="cast-header">Next 4 days forecast</p>
+        
+        <!-- Grid layout for daily forecasts -->
+        <div class="weekF">
+            <!-- Single day forecast -->
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <!-- Repeat daily forecast entries -->
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="/weather.js"></script>
+</body>
+</html>
